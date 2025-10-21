@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>فروشگاه لباس — نمونه</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">بوتیکِ من</h1>
+      <div class="search-cart">
+        <input id="search" type="search" placeholder="جستجو در محصولات..." />
+        <button id="cart-btn" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>جدیدترین مجموعه</h2>
+      <p>لباس‌های مینیمال و باکیفیت — انتخاب مناسب برای هر روز.</p>
+    </section>
+
+    <section>
+      <h3 class="section-title">محصولات</h3>
+      <div id="products" class="products-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- Cart drawer -->
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>سبد خرید</h3>
+      <button id="close-cart" aria-label="بستن">✖</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total">جمع: <span id="cart-total">0</span> تومان</div>
+      <button id="checkout" class="btn-primary">نهایی‌سازی خرید</button>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay" hidden></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© تمام حقوق محفوظ است — بوتیکِ من</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
